@@ -161,7 +161,7 @@ namespace WinFormsApp1
                     }
                 }
 
-
+                int x = 2;
 
                 int numRecords = int.Parse(textToValidate);
 
@@ -177,6 +177,7 @@ namespace WinFormsApp1
                             Meteor1Y = rnd.Next(2000),
                             Meteor2X = rnd.Next(2000),
                             Meteor2Y = rnd.Next(2000),
+                            WhenCreated = DateTime.Now
 
                         });
                         connection.SaveChanges();
@@ -191,9 +192,16 @@ namespace WinFormsApp1
 
                 
             }
+            
 
 
         }
     }
-    }
+
+    
+}
+
+
+
+
 
